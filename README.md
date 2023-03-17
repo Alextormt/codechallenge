@@ -3,7 +3,7 @@
 
 Demo https://alextormt.github.io/codechallenge/module1
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6. 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6. and [Angular Material](https://material.angular.io/)
 
 ### Install Dependencies
 
@@ -25,7 +25,7 @@ For Node versions over 17
 
 1. You will be able to interact with two modules that can be accesed by clicking the tabs in the header.
 2. Each module has a color theme, however you can switch between themes at any moment by clickng the themes buttons in the header
-3. All the Data in both modules is dynamic :) and can be edited using the JSON mocks located in the `/src/app/assets/json` folder (feel free to change some data)
+3. All the Data in both modules is dynamic and loaded with RXJS :). It can be edited using the JSON mocks located in the `/src/app/assets/json` folder. The system will fetch the mocks as if it was a real backend with dynamic data (feel free to change some data)
 
 ### Module 1
 1. Contains 4 cards with dynamic data, SVG icons,gradient animations and hover effects (You can add more cards via `Module1Mock.json`)
