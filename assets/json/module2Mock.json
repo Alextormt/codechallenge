@@ -12,27 +12,27 @@
       ,
       "multibannerImages": [
             {
-                  "src": "/assets/images/png/screen-el.png",
+                  "src": "assets/images/png/screen-el.png",
                   "alt": "Corporative innovation",
                   "position": "center"
             },
             {
-                  "src": "/assets/images/png/screen-ui-2.png",
+                  "src": "assets/images/png/screen-ui-2.png",
                   "alt": "PII grouping",
                   "position": "top-right"
             },
             {
-                  "src": "/assets/images/png/screen-ui-4.png",
+                  "src": "assets/images/png/screen-ui-4.png",
                   "alt": "Operational compliance",
                   "position": "top-left"
             },
             {
-                  "src": "/assets/images/png/screen-ui-3.png",
+                  "src": "assets/images/png/screen-ui-3.png",
                   "alt": "Upload file",
                   "position": "bottom-right"
             },
             {
-                  "src": "/assets/images/png/screen-ui-1.png",
+                  "src": "assets/images/png/screen-ui-1.png",
                   "alt": "PII Clasification count",
                   "position": "bottom-left"
             }

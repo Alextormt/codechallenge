@@ -7,7 +7,7 @@
                   "title":"Asset Managers" ,
                   "extraTitle": "More than 400 Assets!",
                   "extraImage": {
-                        "src": "/assets/images/gif/anim3.gif",
+                        "src": "assets/images/gif/anim3.gif",
                         "alt": "asstets"
                   },
                   "list": [
@@ -24,7 +24,7 @@
                   "title":"Fund Administrators",
                   "extraTitle": "Up to 20 Funding campaings!",
                   "extraImage": {
-                        "src": "/assets/images/gif/anim2.gif",
+                        "src": "assets/images/gif/anim2.gif",
                         "alt": "Funding campaings"
                   },
                   "list": [
@@ -42,7 +42,7 @@
                   "title":"Management Companies",
                   "extraTitle": "Leading +45 companies!",
                   "extraImage": {
-                        "src": "/assets/images/gif/anim4.gif",
+                        "src": "assets/images/gif/anim4.gif",
                         "alt": "leading companies"
                   },
                   "list": [
@@ -60,7 +60,7 @@
                   "title":"Insurance Companies",
                   "extraTitle": "Covering +300 Industries!",
                   "extraImage": {
-                        "src": "/assets/images/gif/anim1.gif",
+                        "src": "assets/images/gif/anim1.gif",
                         "alt": "Covering companies"
                   },
                   "list": [
