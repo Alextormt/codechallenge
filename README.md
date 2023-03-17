@@ -28,11 +28,11 @@ For Node versions over 17
 3. All the Data in both modules is dynamic :) and can be edited using the JSON mocks located in the `/src/app/assets/json` folder (feel free to change some data)
 
 ### Module 1
-    1. Contains 4 cards with dynamic data, SVG icons,gradient animations and hover effects (You can add more cards via `Module1Mock.json`)
+1. Contains 4 cards with dynamic data, SVG icons,gradient animations and hover effects (You can add more cards via `Module1Mock.json`)
 
 ### Module 2
-    2. Contains 5 images with awesome blur and overlapping effects. Clicking each image will open a Dialog with the image itself and the alt text.
-    2. Also contains dynamic text on the right side that can be edited 
-    
-    * the text contents as well as the images src and position can be edited via `Module2Mock.json`
+1. Contains 5 images with awesome blur and overlapping effects. Clicking each image will open a Dialog with the image itself and the alt text.
+2. Also contains dynamic text on the right side that can be edited 
+
+* the text contents as well as the images src and position can be edited via `Module2Mock.json`
 
