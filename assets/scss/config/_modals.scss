@@ -1,0 +1,9 @@
+
+
+
+.modalImage{
+      .mat-dialog-container {
+            @extend %theme-gradient-bg ;
+            border-radius: 2rem;
+      }       
+}

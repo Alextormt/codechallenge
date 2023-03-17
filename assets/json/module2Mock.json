@@ -1,0 +1,40 @@
+{
+      "theme": "theme2",
+      "informativeList": 
+            {
+                  "title": "Optimize operational compliance & efficiency"   ,
+                  "list": [
+                        "Easy automate the finding and redacting of personally identifiable information  (PII) leveraging propietary pattern matching technology found in our PII scanning software" ,
+                        "On-premises data security solutions for quick and easy implementation and scalability" ,
+                        "Lowers overall compliance spending whule significantly mitigating risk"                
+                  ]
+            }           
+      ,
+      "multibannerImages": [
+            {
+                  "src": "/assets/images/png/screen-el.png",
+                  "alt": "Corporative innovation",
+                  "position": "center"
+            },
+            {
+                  "src": "/assets/images/png/screen-ui-2.png",
+                  "alt": "PII grouping",
+                  "position": "top-right"
+            },
+            {
+                  "src": "/assets/images/png/screen-ui-4.png",
+                  "alt": "Operational compliance",
+                  "position": "top-left"
+            },
+            {
+                  "src": "/assets/images/png/screen-ui-3.png",
+                  "alt": "Upload file",
+                  "position": "bottom-right"
+            },
+            {
+                  "src": "/assets/images/png/screen-ui-1.png",
+                  "alt": "PII Clasification count",
+                  "position": "bottom-left"
+            }
+      ]
+}
