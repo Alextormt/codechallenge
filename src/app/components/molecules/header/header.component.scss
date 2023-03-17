@@ -7,6 +7,10 @@
       width: 100%;
       z-index: 999;
 
+      ::ng-deep.mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
+            display: none !important;
+      }
+
       & .mat-tab-label-active{
             @extend %theme1-subtitle;
       }
