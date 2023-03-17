@@ -1,0 +1,36 @@
+
+
+<header class="header">
+      <nav mat-tab-nav-bar>
+            <a mat-tab-link
+            *ngFor="let item of headerItems"
+            [routerLink]="item.link"
+            routerLinkActive #rla="routerLinkActive"
+            [active]="rla.isActive">
+            {{item?.label}}
+            </a>
+      </nav>
+      <div class="header__buttonsContainer d-flex ai-center">
+            <h3  class="header__text">            
+            Try out the Theme switcher!
+            </h3>
+            <button 
+            aria-label="change to theme1" 
+            mat-raised-button 
+            class="header__button theme1"
+            (click)="this.onClickTheme('theme1')"      
+            > 
+            <mat-icon *ngIf="this.theme==='theme1'"> check </mat-icon>
+            Theme 1 
+            </button>
+            <button 
+            aria-label="change to theme2" 
+            mat-raised-button 
+            class="header__button theme2"
+            (click)="this.onClickTheme('theme2')"   
+            > 
+            <mat-icon *ngIf="this.theme==='theme2'"> check </mat-icon>
+            Theme 2
+            </button>
+      </div>
+</header>

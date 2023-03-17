@@ -1,0 +1,31 @@
+
+<div 
+class="landingOne"
+[ngClass]="{
+      theme1: this.theme === 'theme1',
+      theme2: this.theme === 'theme2'
+}
+"
+>
+      <div class="container" >
+            <ng-container *ngIf="!this.isLoading">
+                  <app-text 
+                  class="landingOne__title"    
+                  [text]="this.data?.title"
+                  heading="title"
+                  ></app-text>
+                  <div class="landingOne__cardsContainer d-flex jc-center ai-center">
+                        <app-card 
+                        class="landingOne__card"
+                        *ngFor="let item of this.data?.cards"                        
+                        [data]="item"
+                        ></app-card>
+                  </div>
+            </ng-container>
+            <ng-container *ngIf="this.isLoading">
+                  <div class="loader">
+                        <mat-spinner></mat-spinner>
+                  </div>     
+            </ng-container>       
+      </div>   
+</div>

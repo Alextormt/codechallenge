@@ -1,0 +1,124 @@
+@import '/src/styles.scss';
+
+.bannerMultiimage{  
+      
+      &__item{   
+            cursor: pointer;
+            backdrop-filter: blur(4px);
+            border-radius: 1.7rem;           
+            overflow: hidden;
+            position: absolute;
+            transition: .5s;  
+
+            &:hover{
+                  backdrop-filter: blur(0px);
+                  transition: .5s;                  
+                  @extend %theme-gradient-bg              
+            }
+
+            &.center{ 
+
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%,-50%);
+                  width: 80%;
+                  z-index: 2;
+                  &:hover{                      
+                        transform: scale(1.02) translate(-50%,-50%);  
+                        z-index: 9;               
+                  }
+            }
+
+            &.topRight{                  
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(60%, -136%);
+                  width: 28%;
+                  z-index: 3;
+                  &:hover{                  
+                        transform: scale(1.1) translate(60%, -120%);
+                        z-index: 9;                        
+                  }
+            }
+
+            &.topLeft{                 
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-127%, -240%);
+                  width: 38%;
+                  z-index: 1;
+                  &:hover{                  
+                        transform: scale(1.1) translate(-105%, -214%);;
+                        z-index: 9;
+                  }
+            }
+
+            &.bottomRight{               
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(93%, 4%);
+                  width: 26%;
+                  z-index: 4;
+                  &:hover{                  
+                        transform: scale(1.1) translate(93%, 4%);
+                        z-index: 9;
+                  }
+            }
+
+            &.bottomLeft{                
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-130%, -35%);
+                  width: 50%;
+                  z-index: 1;
+                  &:hover{                        
+                        transform: scale(1.1)  translate(-84%, -39%);
+                        z-index: 9;
+                  }
+            }
+            
+      }
+
+      &__image{           
+            display: block;             
+      }
+
+      &__list{
+            height: 25rem;    
+            position: relative;      
+            width: 100%; 
+      }
+
+
+      // themes
+      &.theme1 {
+            & .bannerMultiimage__container{ @extend %theme1-bg-bg; }
+            & .bannerMultiimage__decorator{ @extend %theme1-title-bg; }
+            & .bannerMultiimage__list{ @extend %theme1-subtitle; }
+            & .bannerMultiimage__item{ @extend %theme1-title-bg; }
+      }
+      &.theme2 {  
+            & .bannerMultiimage__container{ @extend %theme2-bg-bg; }
+            & .bannerMultiimage__decorator{ @extend %theme2-title-bg; }
+            & .bannerMultiimage__list{ @extend %theme2-subtitle; }
+            & .bannerMultiimage__item{ @extend %theme-transparent-bg; }
+      }
+}
+
+@keyframes moveRight {
+  0%{
+    transform: translateX(0px);    
+  }  
+  25%{
+      transform: translateX(-5px);  
+  }
+  50%{
+     transform: translateX(10px);   
+  }
+  75%{
+      transform: translateX(-5px);  
+  }  
+  100% {
+     transform: rotate(0deg);  
+  }
+}

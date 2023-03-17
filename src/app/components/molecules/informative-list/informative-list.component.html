@@ -1,0 +1,30 @@
+
+<div 
+class="informativeList"
+[ngClass]="
+{
+      theme1: this.theme === 'theme1',
+      theme2: this.theme === 'theme2'
+}
+"
+>
+      <div class="informativeList__container d-flex fd-column ai-start">                
+                  <app-text 
+                  class="informativeList__title"
+                  [text]="this.data?.title"
+                  heading="title"                  
+                  ></app-text>    
+                  <span class="informativeList__decorator"></span> 
+                  <ul class="informativeList__list">
+                        <li 
+                        class="informativeList__item"
+                        *ngFor="let item of this.data?.list"
+                        >
+                              <app-text                                  
+                              [text]="item"
+                              >
+                              </app-text>
+                        </li>
+                  </ul>     
+      </div>   
+</div>

@@ -1,0 +1,35 @@
+
+<div 
+class="bannerMultiimage"
+[ngClass]="
+{
+      theme1: this.theme === 'theme1',
+      theme2: this.theme === 'theme2'
+}
+"
+>     
+      <ul class="bannerMultiimage__list">
+            <li 
+            aria-label="Image item to be clicked"
+            matTooltip="Click me!"
+            matTooltipPosition="above"
+            class="bannerMultiimage__item"
+            *ngFor="let item of this.images"
+            (click)="this.onClickImage(item)"
+            [ngClass]="{
+                        center: item?.position === 'center',
+                        topRight: item?.position==='top-right',
+                        topLeft: item?.position==='top-left',
+                        bottomRight: item?.position==='bottom-right',
+                        bottomLeft: item?.position==='bottom-left'
+            }"
+            >           
+                  <app-image  
+                  class="bannerMultiimage__image"                 
+                  [src]="item?.src"
+                  [alt]="item?.alt"                              
+                  >
+                  </app-image>
+            </li>
+      </ul>     
+</div>

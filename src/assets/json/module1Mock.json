@@ -1,0 +1,75 @@
+{
+      "theme": "theme1",
+      "title": "Explore our latest products and services! Check now our catalog and discover unique experiences designed for you",     
+      "cards": [
+            {
+                  "icon":"verticalCheck" ,
+                  "title":"Asset Managers" ,
+                  "extraTitle": "More than 400 Assets!",
+                  "extraImage": {
+                        "src": "/assets/images/gif/anim3.gif",
+                        "alt": "asstets"
+                  },
+                  "list": [
+                        "EPT, EMT, FVPT, CEPT, DCPT and EET" ,   
+                        "Article 50 / 60 (MiFID KID)"  ,
+                        "PRIIPs KID (UK/EU), UCITS KIID" ,
+                        "Segregated mandates" ,
+                        "Transaction cost-only reporting, including Cost Transparency Initiative (CTI)" ,
+                        "Distribution" 
+                  ]
+            },
+            {
+                  "icon":"hierarchy" ,
+                  "title":"Fund Administrators",
+                  "extraTitle": "Up to 20 Funding campaings!",
+                  "extraImage": {
+                        "src": "/assets/images/gif/anim2.gif",
+                        "alt": "Funding campaings"
+                  },
+                  "list": [
+                        "EPT, EMT, FVPT, CEPT, DCPT and EET" ,
+                        "Article 50 / 60 (MiFID KID)"  ,
+                        "PRIIPs KID (UK/EU), UCITS KIID"  ,
+                        "Segregated mandates" ,
+                        "Transaction cost-only reporting, including Cost Transparency Initiative (CTI)" ,
+                        "Distribution" 
+                        
+                  ]
+            },
+            {
+                  "icon": "teamStars" ,
+                  "title":"Management Companies",
+                  "extraTitle": "Leading +45 companies!",
+                  "extraImage": {
+                        "src": "/assets/images/gif/anim4.gif",
+                        "alt": "leading companies"
+                  },
+                  "list": [
+                        "EPT, EMT, FVPT, CEPT, DCPT and EET" ,
+                        "Article 50 / 60 (MiFID KID)"  ,
+                        "PRIIPs KID (UK/EU), UCITS KIID"  ,
+                        "Segregated mandates" ,
+                        "Transaction cost-only reporting, including Cost Transparency Initiative (CTI)" ,
+                        "Distribution" 
+                              
+                        ]
+            },
+            {
+                  "icon":"teamShield"   ,
+                  "title":"Insurance Companies",
+                  "extraTitle": "Covering +300 Industries!",
+                  "extraImage": {
+                        "src": "/assets/images/gif/anim1.gif",
+                        "alt": "Covering companies"
+                  },
+                  "list": [
+                        "Sourcing and validation of KIIDs, EPTs and LPTs"  ,
+                        "Product-level KIID generation "         ,
+                        "Investment option generation"  ,
+                        "Multi-option, product-level website hosting" ,                     
+                        "Distribution" 
+                  ]
+            }
+      ] 
+}

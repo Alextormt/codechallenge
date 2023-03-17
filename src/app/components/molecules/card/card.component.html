@@ -1,0 +1,38 @@
+
+<div 
+class="card slideUp"
+[ngClass]="
+{
+      theme1: this.theme === 'theme1',
+      theme2: this.theme === 'theme2'
+}
+"
+>
+      <div class="card__container d-flex fd-column ai-center">
+                  <app-iconsvg
+                  [icon]="this.data?.icon"                 
+                  class="card__icon"
+                  ></app-iconsvg>
+                  <app-text 
+                  class="card__title"
+                  [text]="this.data?.title"
+                  heading="subtitle"                  
+                  ></app-text>     
+                  <ul class="card__list">
+                        <li 
+                        class="card__item"
+                        *ngFor="let item of this.data?.list"
+                        >
+                              <app-text                                  
+                              [text]="item"
+                              >
+                              </app-text>
+                              <app-card-extra-info
+                              class="card__extraInfo"
+                              [text]="this.data?.extraTitle"
+                              [image]="this.data?.extraImage"
+                              ></app-card-extra-info>
+                        </li>
+                  </ul>  
+      </div>   
+</div>

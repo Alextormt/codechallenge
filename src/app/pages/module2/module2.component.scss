@@ -1,0 +1,57 @@
+@import '/src/styles.scss';
+
+.landingTwo{
+ 
+      &__bannermultiimage{    
+            padding-top: 12rem;         
+            position: relative;
+            display: block;   
+      }
+
+      &__informativelist{
+            max-width: 100%;   
+            margin: 2rem 0rem;         
+            padding: 3rem;
+      }
+
+      &__title{            
+            display: block;
+            margin-bottom: 8rem;
+            margin-top: 10.5rem;
+            text-align: center;
+      }
+
+      // themes    
+      &.theme1 {@extend %theme1-bg-bg;}
+      &.theme2 {@extend %theme2-bg-bg;}
+
+      
+}
+
+
+@include mq-min(tablet){
+      .landingTwo{
+            &__bannermultiimage{  
+                  padding-top: 32rem;
+            }
+            &__informativelist{
+                  margin: 17rem 0rem;
+            }
+      }
+}
+
+@include mq-min(desktop){
+      .landingTwo{    
+            &__bannermultiimage{             
+            left: 0;
+            padding-top: 5rem;
+            position: absolute;
+            top: 40%;
+            width: 50%;    
+            }        
+            &__informativelist{
+                  max-width: 50%;
+                  margin: 25rem 0rem;   
+            }
+      }
+}

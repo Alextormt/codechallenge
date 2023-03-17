@@ -1,0 +1,24 @@
+<div class="modalImage d-flex fd-column">
+      <button 
+      aria-label="close modal"
+      mat-dialog-close
+      mat-icon-button
+      class="modalImage__button"  
+      >
+            <mat-icon>
+                  close
+            </mat-icon>
+      </button>
+      <app-text 
+      class="modalImage__title"  
+      [text]="this.image?.alt"
+      heading="subtitle"
+      >
+      </app-text>     
+      <app-image  
+      class="modalImage__image"                 
+      [src]="this.image?.src"
+      [alt]="this.image?.alt"                          
+      >
+      </app-image>
+</div>

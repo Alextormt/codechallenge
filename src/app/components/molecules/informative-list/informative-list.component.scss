@@ -1,0 +1,47 @@
+@import '/src/styles.scss';
+
+.informativeList{  
+      
+      &__item{     
+            margin-bottom: 1.2rem;
+      }
+
+      &__decorator{           
+            border-radius: 0.6rem;
+            height: 0.6rem;
+            margin-bottom: 1.6rem;
+            width: 3rem;
+      }
+
+      &__list{
+            list-style-type: disc;
+            padding: 0rem 1.2rem 0rem 3.2rem;            
+      }
+
+      &__title{
+            margin-bottom: 2rem;          
+      }
+
+      // themes
+      &.theme1 {
+            & .informativeList__container{ @extend %theme1-bg; }
+            & .informativeList__decorator{ @extend %theme1-title-bg; }
+            & .informativeList__list{ @extend %theme1-subtitle; }
+      }
+      &.theme2 {  
+            & .informativeList__container{ @extend %theme2-bg-bg; }
+            & .informativeList__decorator{ @extend %theme2-title-bg; }
+            & .informativeList__list{ @extend %theme2-subtitle; }
+      }
+}
+
+
+
+
+@include mq-min(desktop){
+
+      .informativeList{
+        
+      }
+
+}  

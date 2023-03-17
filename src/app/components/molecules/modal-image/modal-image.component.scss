@@ -1,0 +1,23 @@
+
+@import '/src/styles.scss';
+
+.modalImage{
+      position: relative;
+      padding-top: 2.5rem;
+
+      &__button{
+            position: absolute;
+            top: -1.5rem;
+            right: 0;
+
+            & .mat-icon{
+                  @extend %theme-white
+            }
+      }  
+      
+      &__title{
+            padding-bottom: 2rem;
+            text-transform: uppercase;   
+            text-align: center;
+      }
+}

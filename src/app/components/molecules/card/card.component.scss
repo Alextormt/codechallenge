@@ -1,0 +1,74 @@
+@import '/src/styles.scss';
+
+.card{  
+      
+      @extend %theme-gradient-bg;
+      box-sizing: content-box;
+      border-radius: 2rem;         
+      height: 52rem;
+      overflow: hidden;
+      padding: 0.2rem;
+      position: relative;
+      width: 27.2rem;
+
+      &__container{
+            padding: 0rem 1rem;
+            border-radius: 1.6rem;
+            width: 100%;
+            height: 100%;
+      }
+
+      &__extraInfo{           
+            backface-visibility: hidden;     
+            bottom: 0; 
+            left: 0; 
+            opacity: 0;          
+            height: 100%;      
+            position: absolute;     
+            padding: 1.5rem;
+            top: auto;
+            transform: translateY(100%);               
+            transition: transform 0.4s, opacity 1.2s;    
+            width: 100%;     
+      }   
+
+      &__icon{
+            height: auto;
+            margin-bottom: 1.9rem;
+            margin-top: 1.2rem;
+            width: 11rem;
+      }
+      
+      &__item{     
+            margin-bottom: 1.2rem;
+      }
+
+      &__list{
+            list-style-type: disc;
+            padding: 0rem 1.2rem 0rem 3.2rem;            
+      }
+
+      &__title{
+            margin-bottom: 4.5rem;          
+      }
+
+      &.slideUp:hover .card__extraInfo{
+            opacity: 1;
+            transform: translateY(0px);
+            transition: transform 0.4s, opacity 1.2s;
+      }
+
+      // themes
+      &.theme1 {           
+            box-shadow: 0rem 0.5rem 0.8rem 0.2rem color(theme1, shadow);
+            & .card__container{ @extend %theme1-bg-bg;}
+            & .card__list{ @extend %theme1-subtitle};  
+            & .card__extraInfo{  @extend %theme-gradient-bg;}                
+      }
+      &.theme2 {           
+            box-shadow: 0rem 0.5rem 0.8rem 0.2rem color(theme2, shadow);            
+            & .card__container{ @extend %theme2-bg-bg;}
+            & .card__list{ @extend %theme2-subtitle};   
+            & .card__extraInfo{  @extend %theme-gradient-bg;}          
+      }
+}
