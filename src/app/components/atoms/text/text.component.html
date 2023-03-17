@@ -2,8 +2,9 @@
 class="textAtom"
 [ngClass]="
       {
-            theme1: !this.isInvertTheme? this.theme === 'theme1' : this.theme === 'theme2' ,
-            theme2: !this.isInvertTheme? this.theme === 'theme2' : this.theme === 'theme1'
+            theme1: this.theme === 'theme1',
+            theme2: this.theme === 'theme2',
+            isWhite: this.isWhite
       }
 "
 >

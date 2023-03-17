@@ -1,6 +1,7 @@
 
+<!-- <div class="gradient-border" id="box">Animated <br>CSS<br>Gradient Border</div> -->
 <div 
-class="card slideUp"
+class="card slideUp gradient-border"
 [ngClass]="
 {
       theme1: this.theme === 'theme1',
@@ -8,7 +9,7 @@ class="card slideUp"
 }
 "
 >
-      <div class="card__container d-flex fd-column ai-center">
+      <div class="card__container d-flex fd-column ai-center ">
                   <app-iconsvg
                   [icon]="this.data?.icon"                 
                   class="card__icon"

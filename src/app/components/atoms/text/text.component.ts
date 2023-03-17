@@ -13,7 +13,7 @@ export class TextComponent implements OnInit, OnDestroy {
   private subscriptions: Subscription[] = [];
   public theme?: ThemeInterface;
   @Input() text?: string;
-  @Input() isInvertTheme?: boolean = false;
+  @Input() isWhite?: boolean = false;
   @Input() heading?: 'title' | 'subtitle' | 'text' = 'text';
  
 

@@ -2,7 +2,7 @@
 
 .card{  
       
-      @extend %theme-gradient-bg;
+      @extend %theme-gradient-bg-animated;     
       box-sizing: content-box;
       border-radius: 2rem;         
       height: 52rem;
@@ -10,6 +10,7 @@
       padding: 0.2rem;
       position: relative;
       width: 27.2rem;
+      
 
       &__container{
             padding: 0rem 1rem;
@@ -63,12 +64,15 @@
             box-shadow: 0rem 0.5rem 0.8rem 0.2rem color(theme1, shadow);
             & .card__container{ @extend %theme1-bg-bg;}
             & .card__list{ @extend %theme1-subtitle};  
-            & .card__extraInfo{  @extend %theme-gradient-bg;}                
+            & .card__extraInfo{  @extend %theme-gradient-bg-animated;}                
       }
       &.theme2 {           
             box-shadow: 0rem 0.5rem 0.8rem 0.2rem color(theme2, shadow);            
             & .card__container{ @extend %theme2-bg-bg;}
             & .card__list{ @extend %theme2-subtitle};   
-            & .card__extraInfo{  @extend %theme-gradient-bg;}          
+            & .card__extraInfo{  @extend %theme-gradient-bg-animated}          
       }
 }
+
+
+

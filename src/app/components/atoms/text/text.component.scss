@@ -4,17 +4,20 @@ h1{
       @extend %title;     
       .textAtom.theme1 &{ @extend %theme1-title;}
       .textAtom.theme2 &{ @extend %theme2-title;}
+      .textAtom.isWhite &{ @extend %theme-white;}
 }
 
 h3{
       @extend %subtitle;     
       .textAtom.theme1 &{ @extend %theme1-subtitle;}
       .textAtom.theme2 &{ @extend %theme2-subtitle;}
+      .textAtom.isWhite &{ @extend %theme-white;}
 }
 
 p{
       @extend %text;     
       .textAtom.theme1 &{ @extend %theme1-text;}
       .textAtom.theme2 &{ @extend %theme2-text;}
+      .textAtom.isWhite &{ @extend %theme-white;}
 }
 
