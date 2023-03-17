@@ -9,13 +9,13 @@
       }
 
       &.theme1{
-            & path{
+            & path, polygon, line, rect{
                   fill: color(theme1, icon)
             }
       }     
 
       &.theme2{
-            & path{
+            & path, polygon, line, rect{
                   fill: color(theme2, icon)
             }
       }     
