@@ -4,6 +4,7 @@
 Demo https://alextormt.github.io/codechallenge/module1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6. and [Angular Material](https://material.angular.io/)
+![Preview](https://firebasestorage.googleapis.com/v0/b/mygallery-1a09b.appspot.com/o/Images%2Fpreview.jpg?alt=media&token=06d1e4d8-a4e6-4f87-bb14-611985782d88)
 
 ### Install Dependencies
 
