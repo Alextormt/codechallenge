@@ -3,7 +3,7 @@
 
 .modalImage{
       .mat-dialog-container {
-            @extend %theme-gradient-bg ;
+            @extend %theme-gradient-bg-animated ;
             border-radius: 2rem;
       }       
 }

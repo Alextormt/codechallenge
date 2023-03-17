@@ -81,17 +81,46 @@
 %theme-transparent-bg{ background: transparent;}
 
 //theme gradient
-%theme-gradient-bg{
-	  background: 
-            radial-gradient(circle at 100% 100%, #ffffff00 0, #ffffff00 4px, transparent 4px) 0% 0%/6px 6px no-repeat,
-            radial-gradient(circle at 0 100%, #ffffff00 0, #ffffff00 4px, transparent 4px) 100% 0%/6px 6px no-repeat,
-            radial-gradient(circle at 100% 0, #ffffff00 0, #ffffff00 4px, transparent 4px) 0% 100%/6px 6px no-repeat,
-            radial-gradient(circle at 0 0, #ffffff00 0, #ffffff00 4px, transparent 4px) 100% 100%/6px 6px no-repeat,
-            linear-gradient(#ffffff00, #ffffff00) 50% 50%/calc(100% - 4px) calc(100% - 12px) no-repeat,
-            linear-gradient(#ffffff00, #ffffff00) 50% 50%/calc(100% - 12px) calc(100% - 4px) no-repeat,
-            linear-gradient(56deg, color(borders, blue)0%, color(borders, green) 100%) !important;                 
-            
+%theme-gradient-bg-animated{
+	background: linear-gradient(
+		60deg, 
+		color(borders, green),
+		color(borders, green),
+		color(borders, blue),
+		color(borders, green),
+		color(borders, blue),
+		color(borders, green),
+		color(borders, blue),
+		color(borders, green),
+		color(borders, green)
+		) ;
+      animation: animatedgradient 12s linear alternate infinite;
+      background-size: 600% 600%;
 }
+
+%theme-gradient-bg-static{
+	background:  linear-gradient(56deg, color(borders, blue)0%, color(borders, green) 100%) !important;
+}
+
+//Animations
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;		
+	}
+	25% {
+		background-position: 100% 50%;		
+	}
+	50% {
+		background-position: 0% 50%;		
+	}
+	75% {
+		background-position: 100% 50%;		
+	}
+	100% {
+		background-position: 0% 50%;		
+	}
+}
+
 
 @include mq-min(desktop){
 	%title {
